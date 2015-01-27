@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gadget>
+  <name>simple calendar gadget</name>
+  <namespace>simple_calendar_gadget.gadget</namespace>
+  <version>0.1</version>
+  <author name="lofttecs">
+  </author>
+  <copyright>© loft Co.,Ltd.</copyright>
+  <icons>
+    <icon src="simple_calendar_gadget.png"/>
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <autoscaleDPI>true</autoscaleDPI>
+      <base type="HTML" apiVersion="1.0.0" src="main.html"/>
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0"/>
+      <defaultImage src="simple_calendar_gadget.png"/>
+    </host>
+  </hosts>
+</gadget>

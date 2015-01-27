@@ -1,0 +1,48 @@
+*{
+margin:0;
+padding:0;
+}
+body{
+width: 120px;
+height:120px;
+font:12px meiryo;
+color: #333;
+overflow: hidden;
+}
+table{
+border-collapse: collapse;
+border-spacing:0;
+}
+table tbody thead tfoot tr th td{
+border:none;
+}
+td{
+text-align: center;
+vertical-align: middle;
+border:0;
+letter-spacing: 0;
+}
+.date{
+font:11px meiryo;
+width: 17px;
+height: 17px;
+}
+.day_sun{
+color: #c33;
+}
+.day_sat{
+color: #33c;
+}
+.day_etc{
+}
+.month{
+font:12px meiryo;
+height: 20px;
+}
+.cal{
+float:left;
+width: 119px;
+}
+.w_cal{
+width: 119px;
+}
