@@ -39,6 +39,14 @@ color: #33c;
 font:12px meiryo;
 height: 20px;
 }
+.day_today{
+background-color: #ddd;
+}
+.day_sche{
+font-weight: bold;
+text-decoration: underline;
+}
+
 .cal{
 float:left;
 width: 119px;
@@ -46,3 +54,69 @@ width: 119px;
 .w_cal{
 width: 119px;
 }
+.month {
+background-image: url("../img/cal_month.png");
+overflow: hidden;
+text-indent: 100%;
+text-overflow:ellipsis;
+white-space:nowrap;
+max-width:27px;
+margin: auto;
+}
+.month_1 {background-position:      0 0;}
+.month_2 {background-position:  -27px 0;}
+.month_3 {background-position:  -54px 0;}
+.month_4 {background-position:  -81px 0;}
+.month_5 {background-position: -108px 0;}
+.month_6 {background-position: -135px 0;}
+.month_7 {background-position: -162px 0;}
+.month_8 {background-position: -189px 0;}
+.month_9 {background-position: -216px 0;}
+.month_10{background-position: -243px 0;}
+.month_11{background-position: -270px 0;}
+.month_12{background-position: -297px 0;}
+
+.date {
+background-image: url("../img/cal_day.png");
+overflow: hidden;
+text-indent: 100%;
+text-overflow:ellipsis;
+white-space:nowrap;
+max-width:17px;
+}
+.day_sun {background-position-y: -17px;}
+.day_sat {background-position-y: -34px;}
+.day_sche{background-position-y: -51px;}
+.day_sun.day_sche{background-position-y: -68px;}
+.day_sat.day_sche{background-position-y: -84px;}
+.day_1 {background-position-x:   0;}
+.day_2 {background-position-x:  -17px;}
+.day_3 {background-position-x:  -34px;}
+.day_4 {background-position-x:  -51px;}
+.day_5 {background-position-x:  -68px;}
+.day_6 {background-position-x:  -85px;}
+.day_7 {background-position-x: -102px;}
+.day_8 {background-position-x: -119px;}
+.day_9 {background-position-x: -136px;}
+.day_10{background-position-x: -153px;}
+.day_11{background-position-x: -170px;}
+.day_12{background-position-x: -187px;}
+.day_13{background-position-x: -204px;}
+.day_14{background-position-x: -221px;}
+.day_15{background-position-x: -238px;}
+.day_16{background-position-x: -255px;}
+.day_17{background-position-x: -272px;}
+.day_18{background-position-x: -289px;}
+.day_19{background-position-x: -306px;}
+.day_20{background-position-x: -323px;}
+.day_21{background-position-x: -340px;}
+.day_22{background-position-x: -357px;}
+.day_23{background-position-x: -374px;}
+.day_24{background-position-x: -391px;}
+.day_25{background-position-x: -408px;}
+.day_26{background-position-x: -425px;}
+.day_27{background-position-x: -442px;}
+.day_28{background-position-x: -459px;}
+.day_29{background-position-x: -476px;}
+.day_30{background-position-x: -493px;}
+.day_31{background-position-x: -510px;}
