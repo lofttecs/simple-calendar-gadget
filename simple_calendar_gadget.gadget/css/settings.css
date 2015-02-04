@@ -2,16 +2,14 @@
 margin:0;
 padding:0;
 }
-body
-{ 
+body{
   width: 300px;
   height: 300px;
   font-family: Meiryo, 'MS UI Gothic' , 'Segoe UI', Tahoma, Sans-Serif;
   margin: 0px;
   font:12px meiryo;
 }
-textarea
-{ 
+textarea{
   width: 300px;
   height: 300px;
   font:12px monospace;

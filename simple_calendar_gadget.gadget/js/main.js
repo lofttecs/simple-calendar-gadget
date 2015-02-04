@@ -6,11 +6,11 @@ var fin,fca,far,fde,fdf,fdd,fal,dno,dbf,adt,adf,ade,adb,sdd,hsc,sdb,shb,sgs,i,ec
 far=function(dno){
 return [dno.getFullYear(),dno.getMonth()+1,dno.getDate(),dno.getDay(),dno.getDay(),dno.getHours(),dno.getMinutes()];
 };
-fde=function(dno){//end of the month
+fde=function(dno){
 var m=new Date(dno.getFullYear(),dno.getMonth() + 1, 0);
 return far(m);
 };
-fdf=function(dno){//1st
+fdf=function(dno){
 var m=new Date(dno);
 m.setDate(1);
 return far(m);
@@ -20,9 +20,9 @@ return ''+adb[0]+("0"+adb[1]).slice(-2)+("0"+adb[2]).slice(-2);
 };
 fca=function(dno){
   var eta,etb,etr,etd,eth,scc;
-  adt=far(dno);//today
-  ade=fde(dno);//end of the month
-  adf=fdf(dno);//1st
+  adt=far(dno);
+  ade=fde(dno);
+  adf=fdf(dno);
 
   scc="cal "+adt[0]+("0"+adt[1]).slice(-2);
   eta=eca.getElementsByTagName("table");
@@ -112,18 +112,15 @@ fal=function(){
   acr=far(dcr);
   for(ssd in hsc){
     sdb=fdd(acr);
-    if(sdb in hsc){
+    if(sdb == ssd){
       for(ssm in hsc[ssd]){
         sdm=''+("0"+acr[5]).slice(-2)+("0"+acr[6]).slice(-2);
         if(!(ssd in hsf)){
           hsf[ssd]={};
         }
-        if(!(ssd in hsf)){
-          hsf[ssd]={};
-        }
         if(sdm == ssm && !(sdm in hsf[ssd])){
-          alert(hsc[ssd][sdm]);
-          hsf[ssd][sdm]=!0;
+          alert(hsc[ssd][ssm]);
+          hsf[ssd][ssm]=!0;
         }
       }
     }
@@ -131,7 +128,6 @@ fal=function(){
 };
 fin=function(){
   System.Gadget.settingsUI="settings.html";
-  //setTimeout(function(){confirm(w);},1000);
   sgs=System.Gadget.Settings;
   eca = d.getElementById("cal");
   if(eca){
@@ -145,7 +141,6 @@ fin=function(){
 
     dno=new Date();
     fca(new Date(dno));
-    //alert("");
     System.Gadget.onSettingsClosed=function() {
       hsc=eval("("+sgs.read("sch")+")");
       dno=new Date();

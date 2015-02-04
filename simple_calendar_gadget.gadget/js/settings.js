@@ -3,7 +3,6 @@
  */
 !(function(d,w){
   var fin;
-//
   fin=function(){
     var est,ets,hsc,ssc;
     sgs=System.Gadget.Settings;
@@ -12,8 +11,6 @@
     if(est){
       hsc=eval("("+sgs.read("sch")+")");
       esh.value = sgs.read("sch");
-//      esh.style.width='100%';
-//      esh.style.height='100%';
 
       System.Gadget.onSettingsClosing=function(e) {
         if(e.closeAction==e.Action.commit) {

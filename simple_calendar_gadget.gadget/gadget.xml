@@ -2,7 +2,7 @@
 <gadget>
   <name>simple calendar gadget</name>
   <namespace>simple_calendar_gadget.gadget</namespace>
-  <version>0.1</version>
+  <version>2.1</version>
   <author name="lofttecs">
   </author>
   <copyright>© loft Co.,Ltd.</copyright>
