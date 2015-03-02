@@ -57,7 +57,6 @@ fca=function(dno){
   for(i=0;i<adf[3];i++){
     etd = d.createElement('td');
     etr.appendChild(etd);
-    etd.className="date";
     etd.appendChild(d.createElement('div'));
   }
   sdd=adf[3];
@@ -102,7 +101,6 @@ fca=function(dno){
   for(i=7;i>sdd;i--){
     etd = d.createElement('td');
     etr.appendChild(etd);
-    etd.className="date";
     etd.appendChild(d.createElement('div'));
   }
 
